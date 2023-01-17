@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+
+    html { height: 100%; }
+    body { margin: 0; height: 100%; }
+
+    main {
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 100%;
+
+    }
+
+    .loader {
+
+      box-sizing: border-box;
+
+      width: 18px;
+      height: 18px;
+
+      border-width: 2px;
+      border-style: solid;
+      border-radius: 50%;
+      border-color: #f40 transparent transparent #f40;
+
+      animation: revolve .6s linear infinite;
+
+    }
+
+    @keyframes revolve {
+
+      0% { transform:rotate(0deg) }
+      to { transform:rotate(1turn) }
+      
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+  <main>
+    <div class="loader"></div>
+  </main>
+</body>
+
+</html>
